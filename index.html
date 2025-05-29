@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estado de Ánimo - Clase Inclusiva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>¿Cómo te sientes antes de entrar a clase?</h1>
+
+    <form id="formulario">
+      <p>Selecciona tu estado de ánimo:</p>
+
+      <div class="emoji-selector">
+        <label>
+          <input type="radio" name="estado" value="1" />
+          <div class="emoji-box">
+            😔<br>
+            <span class="emoji-label">1 - Muy mal</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="estado" value="2" />
+          <div class="emoji-box">
+            😟<br>
+            <span class="emoji-label">2 - Mal</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="estado" value="3" />
+          <div class="emoji-box">
+            😐<br>
+            <span class="emoji-label">3 - Regular</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="estado" value="4" />
+          <div class="emoji-box">
+            🙂<br>
+            <span class="emoji-label">4 - Bien</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="estado" value="5" />
+          <div class="emoji-box">
+            😄<br>
+            <span class="emoji-label">5 - Excelente</span>
+          </div>
+        </label>
+      </div>
+
+      <!-- Comentario adicional -->
+      <label for="mensaje">¿Quieres dejar un comentario adicional?</label>
+      <textarea id="mensaje" placeholder="Puedes escribir lo que necesites para que tu profesor entienda tu estado..."></textarea>
+
+      <button type="button" onclick="enviarEstado()">Enviar</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
